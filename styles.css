@@ -1,20 +1,104 @@
  body {
-     font-family: "Roboto", sans-serif;
-     padding: 0;
-     margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
  }
 
- .container{
+ .container {
     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
  }
 
- .banner{
+ .content-container {
+    position: relative;
+    height: 100%;
+ }
+
+ .banner {
     background-image: url('../images/banner.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
+ }
+
+ .banner .header {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px 10px 15px;
+ }
+
+ .banner .header .logo,
+ .banner .header .brand-info {
+    display: flex;
+    align-items: center;
+ }
+
+ .banner .header .logo .des,
+ .banner .header .brand-info .des {
+    font-size: 18px;
+    font-weight: 300;
+ }
+
+
+ .banner .header .logo {
+    gap: 147px;
+ }
+
+ .banner .header .logo img {
+    max-height: 44px;
+ }
+
+ .banner .header .brand-info {
+    gap: 117px;
+ }
+
+ .banner .heading {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+ }
+
+ @media only screen and (max-width: 1280px) {
+    .banner .header .logo {
+       gap: 50px;
+    }
+
+    .banner .header .logo .des,
+    .banner .header .brand-info .des {
+       font-size: 15px;
+    }
+
+    .banner .header .brand-info {
+       gap: 50px;
+    }
+
+    .banner .header .logo img {
+       min-height: auto;
+    }
+ }
+
+
+ @media only screen and (max-width: 768px) {
+    .banner .header {
+       flex-direction: column;
+       gap: 20px;
+    }
+
+    .banner .header .logo img {
+       min-height: auto;
+    }
+
+    .banner .header .logo,
+    .banner .header .brand-info {
+       width: 100%;
+       justify-content: space-between;
+    }
  }
