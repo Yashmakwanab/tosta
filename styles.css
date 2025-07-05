@@ -1,4 +1,8 @@
- body {
+ body,
+ h1,
+ h2,
+ h3,
+ p {
     font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
@@ -11,11 +15,7 @@
     padding: 0 20px;
  }
 
- .content-container {
-    position: relative;
-    height: 100%;
- }
-
+ /* Banner */
  .banner {
     background-image: url('../images/banner.png');
     background-size: cover;
@@ -23,6 +23,11 @@
     height: 100vh;
     display: flex;
     color: white;
+ }
+
+ .banner .content-container {
+    position: relative;
+    height: 100%;
  }
 
  .banner .header {
@@ -45,7 +50,6 @@
     font-weight: 300;
  }
 
-
  .banner .header .logo {
     gap: 147px;
  }
@@ -66,6 +70,190 @@
     right: 0;
  }
 
+ /* Review */
+ .review {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+ }
+
+ .review .content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .review h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #372e2c;
+    display: flex;
+    justify-content: center;
+ }
+
+ .review .details h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #372e2c;
+    margin-bottom: 60px;
+ }
+
+ .review .details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #372e2c;
+    margin-bottom: 60px;
+ }
+
+ .review .details .rating-container {
+    display: flex;
+    align-items: flex-end;
+ }
+
+ .review .details .google-logo {
+    width: 30px;
+    margin-right: 20px;
+ }
+
+ .review .details .stars {
+    color: #372e2c;
+    font-size: 20px;
+    margin-right: 12px;
+ }
+
+ .review .details .rating-value {
+    font-weight: bold;
+    font-size: 18px;
+    color: #372e2c;
+ }
+
+ .review .background-banner {
+    background-image: url("/images/bg_layer.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ }
+
+ /* Listing */
+ .listing {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+ }
+
+ .listing .background-banner {
+    background-image: url("/images/bg_layer.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ }
+
+ .listing .brand-card {
+    width: 100%;
+    padding: 50px 0;
+ }
+
+ .listing .info-row {
+    background-color: #eeedea;
+    display: flex;
+    min-height: 54.77px;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 11.52px;
+    padding: 10px 42px 10px 21px;
+ }
+
+ .listing .info-label {
+    font-weight: normal;
+    color: #372E2C;
+    font-size: 16px;
+    width: 150px;
+    border-right: 1px solid #372E2C;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    font-weight: 700;
+    padding: 7.6px 0;
+ }
+
+ .listing .info-value {
+    color: #372E2C;
+    font-size: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    padding: 7.6px 0 7.6px 10px;
+ }
+
+ /* Card section */
+ .card-section {
+    background-image: url('/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+ }
+
+ .card-section .card {
+    background: #eeedea;
+    max-width: 800px;
+    padding: 20px 20px 30px 20px;
+    position: relative;
+ }
+
+ .card-section .card:after {
+    background:
+       linear-gradient(-45deg, transparent 16px, #eeedea 0),
+       linear-gradient(45deg, transparent 16px, #eeedea 0);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-size: 21px 32px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    left: 0px;
+    bottom: -17px;
+ }
+
+ .card-section .card .card-details {
+    padding: 50px 0 20px 0;
+    border-bottom: 1px solid #372E2C;
+ }
+
+ .card-section .card.with-desc .card-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .card-section .card .card-details h1 {
+    font-size: 30px;
+    color: #372E2C;
+    font-weight: bold;
+    max-width: 500px;
+    text-align: end;
+    margin-left: auto;
+    margin-right: 40px;
+ }
+
+ .card-section .card .card-details p {
+    font-size: 16px;
+    color: #372E2C;
+ }
+
+ .card-section .card.with-desc .card-details h1 {
+    margin-left: 0;
+ }
+
  @media only screen and (max-width: 1280px) {
     .banner .header .logo {
        gap: 50px;
@@ -83,22 +271,67 @@
     .banner .header .logo img {
        min-height: auto;
     }
- }
 
+    .review .details h1 {
+       margin-bottom: 40px;
+    }
+
+    .review .details p {
+       margin-bottom: 40px;
+    }
+ }
 
  @media only screen and (max-width: 768px) {
     .banner .header {
        flex-direction: column;
        gap: 20px;
+       padding: 30px 10px 10px 10px;
     }
 
     .banner .header .logo img {
-       min-height: auto;
+       max-height: 30px;
     }
 
     .banner .header .logo,
     .banner .header .brand-info {
        width: 100%;
        justify-content: space-between;
+    }
+
+    .review h1 {
+       justify-content: start;
+    }
+
+    .review .content-container {
+       gap: 20px;
+       grid-template-columns: 1fr;
+    }
+
+    .listing .info-row {
+       flex-direction: column;
+       padding: 10px 21px 10px 21px;
+    }
+
+    .listing .info-label {
+       width: 100%;
+       border-right: none;
+       border-bottom: 1px solid #372E2C;
+    }
+
+    .listing .info-value {
+       width: 100%;
+       justify-content: start;
+       padding: 7.6px 0 7.6px 0;
+    }
+
+    .card-section .card .card-details h1 {
+       font-size: 24px;
+    }
+
+    .card-section .card.with-desc .card-details {
+       flex-direction: column;
+       align-content: flex-start;
+       flex-wrap: wrap;
+       gap: 10px;
     }
  }
