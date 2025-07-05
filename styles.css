@@ -8,6 +8,14 @@
     margin: 0;
  }
 
+ .font-bold {
+    font-weight: bold;
+ }
+
+ .font-medium {
+    font-weight: 500;
+ }
+
  .container {
     max-width: 1440px;
     width: 100%;
@@ -254,6 +262,124 @@
     margin-left: 0;
  }
 
+ /* growth-journey */
+ .growth-journey {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+ }
+
+ .growth-journey .background-banner {
+    background-image: url("images/bg_layer_top.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ }
+
+ .growth-journey .parent-container {
+    display: flex;
+    gap: 73px;
+ }
+
+ .growth-journey .brand-tagline {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 31px;
+ }
+
+ .growth-journey .brand-content {
+    margin-bottom: 90px;
+ }
+
+ .growth-journey .brand-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: bold;
+ }
+
+ .growth-journey .brand-description {
+    font-size: 16px;
+ }
+
+ .growth-journey .table-container {
+    width: 100%;
+ }
+
+ .growth-journey .brand-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ .growth-journey .info-row {
+    background-color: #F6F5F3;
+    display: flex;
+    align-items: center;
+    border: 1px solid #362E2C;
+ }
+
+ .growth-journey .info-label {
+    color: #372E2C;
+    font-size: 18px;
+    width: 105px;
+    border-right: 1px solid #362E2C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px 0;
+ }
+
+ .growth-journey .info-value {
+    color: #372E2C;
+    font-size: 16px;
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px 40px;
+    justify-content: space-between;
+ }
+
+ .growth-journey .timeline {
+    border-bottom: 1px solid #362E2C;
+    display: flex;
+    gap: 19px;
+    padding-bottom: 10px;
+ }
+
+ .growth-journey .timeline-column {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .growth-journey .dot {
+    width: 6px;
+    height: 6px;
+    background-color: #99BCAB;
+    border-radius: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+ }
+
+ .growth-journey .column {
+    background-image: linear-gradient(180deg, #f4f6ee 0%, #cbddb7 100%);
+    width: 65px;
+    margin-bottom: 13px;
+ }
+
+ .growth-journey .year {
+    color: #372E2C;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+ }
+
+
  @media only screen and (max-width: 1280px) {
     .banner .header .logo {
        gap: 50px;
@@ -278,6 +404,34 @@
 
     .review .details p {
        margin-bottom: 40px;
+    }
+
+    .growth-journey .parent-container {
+       gap: 50px;
+    }
+
+    .growth-journey .info-label {
+       font-size: 16px;
+    }
+
+    .growth-journey .info-value {
+       font-size: 14px;
+       padding: 10px 20px;
+    }
+
+    .growth-journey .column {
+       width: 55px;
+    }
+ }
+
+ @media only screen and (max-width: 1024px) {
+    .growth-journey .parent-container {
+       flex-direction: column;
+       gap: 40px;
+    }
+
+    .growth-journey .timeline {
+       margin: auto;
     }
  }
 
@@ -333,5 +487,32 @@
        align-content: flex-start;
        flex-wrap: wrap;
        gap: 10px;
+    }
+
+    .growth-journey .info-label {
+       width: 80px;
+       font-size: 14px;
+    }
+
+    .growth-journey .info-value {
+       flex-direction: column;
+       font-size: 12px;
+    }
+
+    .growth-journey .brand-content {
+       margin-bottom: 30px;
+    }
+
+    .growth-journey .brand-tagline {
+       font-size: 20px;
+    }
+
+    .growth-journey .brand-title {
+       font-size: 18px;
+    }
+
+    .growth-journey .brand-description,
+    .growth-journey .year {
+       font-size: 14px;
     }
  }
