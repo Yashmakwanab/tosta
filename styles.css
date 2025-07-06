@@ -407,7 +407,13 @@
 
  /* Team member wrapper */
  .team-member-wrapper {
-    margin: 30px 20px;
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    min-width: 300px;
     padding: 10px 30px;
     background-color: #eeedea;
  }
@@ -468,6 +474,33 @@
     margin: 0;
  }
 
+ /* carousal */
+ .carousel-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.caraosal-icon{
+   width: 50px;
+   height: 50px;
+}
+
+.flex{
+   display: flex;
+}
+
+.items-center{
+   align-items: center;
+}
 
  @media only screen and (max-width: 1280px) {
     .banner .header .logo {
