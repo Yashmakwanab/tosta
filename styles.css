@@ -200,7 +200,7 @@
 
  /* Card section */
  .card-section {
-    background-image: url('/images/banner.png');
+    background-image: url('/images/bg_card_layer.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
