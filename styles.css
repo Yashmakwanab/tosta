@@ -1274,7 +1274,18 @@ p {
       flex-wrap: wrap;
    }
 
-   .revenue-top-description{
+   .revenue-top-description {
       text-align: center;
+   }
+
+   .banner,
+   .review,
+   .listing,
+   .growth-journey,
+   .investment-breakdown,
+   .financial-highlights,
+   .card-section {
+      background-attachment: scroll;
+      /* Fallback for mobile devices */
    }
 }
