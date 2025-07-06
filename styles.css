@@ -204,7 +204,7 @@ p {
 }
 
 .listing .info-row {
-   background-color: #eeedea;
+   background-color: #F6F5F3;
    display: flex;
    min-height: 54.77px;
    align-items: center;
@@ -249,7 +249,7 @@ p {
 }
 
 .card-section .card {
-   background: #eeedea;
+   background: #f1ecea;
    max-width: 680px;
    padding: 20px 20px 30px 20px;
    position: relative;
@@ -257,8 +257,8 @@ p {
 
 .card-section .card:after {
    background:
-      linear-gradient(-45deg, transparent 16px, #eeedea 0),
-      linear-gradient(45deg, transparent 16px, #eeedea 0);
+      linear-gradient(-45deg, transparent 16px, #f1ecea 0),
+      linear-gradient(45deg, transparent 16px, #f1ecea 0);
    background-repeat: repeat-x;
    background-position: left bottom;
    background-size: 12px 32px;
@@ -283,7 +283,7 @@ p {
 }
 
 .card-section .card .card-details h1 {
-   font-size: 30px;
+   font-size: 25px;
    color: #372E2C;
    font-weight: bold;
    max-width: 500px;
@@ -307,7 +307,7 @@ p {
 }
 
 .card-section .key-offerings h1 {
-   font-size: 30px;
+   font-size: 25px;
    color: #372E2C;
    font-weight: bold;
    text-align: start !important;
@@ -404,7 +404,7 @@ p {
 }
 
 .growth-journey .info-row {
-   background-color: #F6F5F3;
+   background-color: #faf5f5;
    display: flex;
    align-items: center;
    border: 1px solid #362E2C;
@@ -507,6 +507,167 @@ p {
    text-decoration: none;
 }
 
+/* financial-highlights */
+.financial-highlights {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   background-color: #f1ecea;
+}
+
+.financial-highlights .content-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.financial-highlights h1 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #372e2c;
+   display: flex;
+   justify-content: center;
+}
+
+.financial-highlights .details .table-header {
+   font-size: 16px;
+   font-weight: 500;
+   color: #fff;
+   background-color: #372E2C;
+   border: 1px solid #372E2C;
+   padding: 10px;
+   text-align: start;
+   margin-bottom: 10px;
+}
+
+.financial-highlights .details .table-body .table-row {
+   border: 1px solid #372E2C;
+   display: flex;
+   margin-bottom: 10px;
+}
+
+.financial-highlights .details .table-body .table-row>div {
+   padding: 10px;
+   border-right: 1px solid #372E2C;
+}
+
+.financial-highlights .details .table-body .table-row>div:nth-child(1) {
+   min-width: 40px;
+   text-align: center;
+}
+
+.financial-highlights .details .table-body .table-row>div:nth-child(2) {
+   min-width: 280px;
+}
+
+.financial-highlights .details .table-body .table-row>div:nth-child(3),
+.financial-highlights .details .table-body .table-row>div:nth-child(4),
+.financial-highlights .details .table-body .table-row>div:nth-child(5) {
+   min-width: 100px;
+   text-align: center;
+}
+
+.annual-scenarios>div:nth-child(2),
+.annual-scenarios>div:nth-child(3),
+.annual-scenarios>div:nth-child(4) {
+   min-width: 100px;
+   padding: 10px;
+   text-align: center;
+   border-right: 1px solid #fff;
+}
+
+.annual-scenarios>div:nth-child(1) {
+   min-width: 341px;
+   padding: 10px;
+   border-right: 1px solid #fff;
+}
+
+.annual-scenarios>div:nth-child(4) {
+   border-right: none;
+}
+
+.financial-highlights .annual-scenarios {
+   display: flex;
+   padding: 0 !important;
+}
+
+.financial-highlights .details .table-body .table-row>div:last-child {
+   border-right: none;
+}
+
+/* investment-breakdown */
+.investment-breakdown {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   background-color: #f1ecea;
+}
+
+.investment-breakdown .content-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.investment-breakdown h1 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #372e2c;
+   display: flex;
+   justify-content: center;
+}
+
+.investment-breakdown .details .table-container {
+   display: flex;
+   gap: 40px;
+}
+
+.investment-breakdown .details .table-container .table {
+   width: 100%;
+}
+
+.investment-breakdown .details .table-container .table>div {
+   font-size: 16px;
+   font-weight: 500;
+   color: #372E2C;
+   padding: 10px;
+   text-align: center;
+   margin-bottom: 10px;
+   border: 1px solid #372E2C;
+}
+
+.investment-breakdown .details .table-container .table>div > span {
+   font-size: 11px;
+   font-weight: 500;
+   color: #372E2C;
+}
+
+.investment-breakdown .details .table-container{
+   padding-bottom: 40px;
+   margin-bottom: 60px;
+   border-bottom: 1px solid #372E2C;
+}
+
+.investment-breakdown .details .table-container .table .header {
+   color: #fff;
+   background-color: #372E2C;
+}
+
+.investment-breakdown .details .chart {
+   display: flex;
+   align-items: center;
+}
+
+.investment-breakdown .details .chart .des {
+   width: 50%;
+}
+
+.investment-breakdown .details .chart .graph {
+     width: 50%;
+}
+
+.investment-breakdown .details .chart .graph img{
+   max-width: 100%;
+}
+
 @media only screen and (max-width: 1280px) {
    .banner .header .logo {
       gap: 50px;
@@ -548,6 +709,17 @@ p {
 
    .growth-journey .column {
       width: 55px;
+   }
+
+   .financial-highlights .content-container, .investment-breakdown .content-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
+
+   .financial-highlights .details, .investment-breakdown .details {
+      max-width: 726px;
+      margin: auto;
+      width: 100%;
    }
 }
 
@@ -692,5 +864,37 @@ p {
 
    .disclaimer .info span {
       display: none;
+   }
+
+   .financial-highlights .content-container {
+      grid-template-columns: 1fr;
+   }
+
+   .financial-highlights .details {
+      max-width: 100%;
+      overflow: auto;
+   }
+
+   .financial-highlights .details>div {
+      width: fit-content;
+   }
+
+   .investment-breakdown .details .table-container .table>div{
+      font-size: 14px;
+   }
+
+   .investment-breakdown .details .table-container{
+      gap: 10px;
+      margin-bottom: 20px;
+   }
+
+   .investment-breakdown .details .chart{
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .investment-breakdown .details .chart .des, .investment-breakdown .details .chart .graph {
+      width: 100%;
+      text-align: center;
    }
 }
