@@ -59,7 +59,7 @@ p {
    max-width: 1440px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 20px;
+   padding: 0 50px;
 }
 
 /* Banner */
@@ -256,38 +256,39 @@ p {
 /* Card section */
 .card-section {
    background-size: cover;
-   background-position: center;
+   background-position: top center;
    background-attachment: fixed;
    display: flex;
    color: white;
    align-items: center;
    position: relative;
    overflow: hidden;
+   min-height: 100vh;
    padding: 150px 0;
 }
 
 .sec-1 {
-   background-image: url('/images/bg_card_layer.png');
+   background-image: url('/images/sec-1.png');
 }
 
 .sec-2 {
-   background-image: url('/images/banner.png');
+   background-image: url('/images/sec-2.png');
 }
 
 .sec-3 {
-   background-image: url('/images/bg_card_layer.png');
+   background-image: url('/images/sec-3.png');
 }
 
 .sec-4 {
-   background-image: url('/images/bg_card_layer.png');
+   background-image: url('/images/sec-4.png');
 }
 
 .sec-5 {
-   background-image: url('/images/bg_card_layer.png');
+   background-image: url('/images/sec-5.png');
 }
 
 .sec-6 {
-   background-image: url('/images/bg_card_layer.png');
+   background-image: url('/images/sec-6.png');
 }
 
 .card-section .card {
@@ -934,6 +935,9 @@ p {
 
 .revenue-card-img {
    max-width: 100%;
+   max-height: 240px;
+   object-fit: cover;
+   width: 100%;
 }
 
 .revenue-card-wrapper {
@@ -1111,7 +1115,12 @@ p {
       padding: 7.6px 0 7.6px 0;
    }
 
-   .card-section .card .card-details h1 {
+   .card-section .card .card-details h1,
+   .team-section h1,
+   .disclaimer h1,
+   .financial-highlights h1,
+   .investment-breakdown h1,
+   .review h1 {
       font-size: 24px;
    }
 
@@ -1140,7 +1149,7 @@ p {
       font-size: 20px;
    }
 
-   .growth-journey .brand-title {
+   .growth-journey .brand-title, .review .details h1 {
       font-size: 18px;
    }
 
@@ -1150,8 +1159,16 @@ p {
    .disclaimer .details p,
    .investment-breakdown .details .table-container .table>div,
    .success-points p,
-   .success-points .points .point-details p {
-      font-size: 14px;
+   .success-points .points .point-details p,
+   .team-section p,
+   .financial-highlights .details .table-body .table-row>div,
+   .revenue-top-description,
+   .listing .info-value {
+      font-size: 14px !important;
+   }
+   
+   .card-section{
+      min-height: auto;
    }
 
    .card-section .key-offerings h1 {
@@ -1278,14 +1295,57 @@ p {
       text-align: center;
    }
 
+   .banner .heading {
+      font-size: 39px;
+   }
+
+   .revenue-footer {
+      margin-bottom: 0;
+   }
+
+   .revenue-title-wrapper {
+      margin-top: 0;
+   }
+
+   .listing .brand-card {
+      padding: 0;
+   }
+   
+   .revenue-card-wrapper{
+      max-width: 360px;
+      margin: auto;
+   }
+
    .banner,
    .review,
    .listing,
    .growth-journey,
    .investment-breakdown,
    .financial-highlights,
-   .card-section {
+   .card-section,
+   .revenue,
+    .disclaimer,
+   .success-points,
+   .team-section {
       background-attachment: scroll;
-      /* Fallback for mobile devices */
+   }
+
+   .review,
+   .listing,
+   .growth-journey,
+   .investment-breakdown,
+   .financial-highlights,
+   .card-section,
+   .revenue,
+   .disclaimer,
+   .success-points,
+   .team-section {
+      padding: 100px 0;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .container {
+      padding: 0 20px;
    }
 }
