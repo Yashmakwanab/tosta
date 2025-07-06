@@ -933,7 +933,7 @@ p {
 }
 
 .revenue-card-img {
-   width: -webkit-fill-available;
+   max-width: 100%;
 }
 
 .revenue-card-wrapper {
@@ -1273,16 +1273,8 @@ p {
       gap: 10px;
       flex-wrap: wrap;
    }
-}
 
-@media only screen and (max-width: 500px) {
-   .revenue-card-wrapper {
-      padding-inline: 5px;
-   }
-}
-
-@media only screen and (max-width: 380px) {
-   .revenue-card-img {
-      width: 100%;
+   .revenue-top-description{
+      text-align: center;
    }
 }
