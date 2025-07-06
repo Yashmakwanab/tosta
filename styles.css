@@ -673,15 +673,12 @@ p {
    display: flex;
    min-height: 100vh;
    align-items: center;
+   justify-content: center;
 }
 
-.team-section .container {
-   width: -webkit-fill-available;
-}
-
-.team-section .header {
-   max-width: 900px;
-   margin-bottom: 60px;
+/* Team section */
+.team-section {
+   padding: 20px;
 }
 
 .team-section h1 {
@@ -830,6 +827,79 @@ p {
    font-family: "Roobert-Light", sans-serif;
 }
 
+/* Revenue Screen */
+
+.revenue{
+   padding-top: 40px;
+}
+
+.revenue-title-wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-block: 60px;
+}
+
+.revenue-top-description {
+   font-size: 16px;
+   color: #372E2C;
+   font-weight: 300;
+   max-width: 600px;
+}
+
+.revenue-card-img{
+  width: -webkit-fill-available;
+}
+
+.revenue-card-wrapper {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  background-color: #f1ecea;
+}
+
+.revenue-card{
+  max-width: 360px;
+  padding: 20px;
+  background-color: white;
+}
+
+.revenue-card-title {
+  margin-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.revenue-card-description{
+  margin-top: 20px;
+  font-weight: 300;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #504f4fc3;
+}
+
+.revenue-footer {
+   margin-block: 60px;
+   padding-top: 10px;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   color: #504f4fc3;
+}
+
+.revenue .background-banner {
+   background-image: url("images/bg_layer_top.png");
+   background-repeat: no-repeat;
+   background-position: top center;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+}
+
 @media only screen and (max-width: 1280px) {
    .banner .header .logo {
       gap: 50px;
@@ -900,6 +970,12 @@ p {
    .disclaimer .info {
       margin-top: 100px;
    }
+
+.revenue-title-wrapper{
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-block: 40px;
+   gap: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1105,5 +1181,10 @@ p {
    .team-section .member-name,
    .team-section .member-title {
       text-align: center;
+   }
+
+   .revenue-footer{
+      gap: 10px;
+      flex-wrap: wrap;
    }
 }
