@@ -120,7 +120,7 @@ p {
 /* Review */
 .review {
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    align-items: center;
 }
 
@@ -185,7 +185,7 @@ p {
 /* Listing */
 .listing {
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    align-items: center;
 }
 
@@ -469,7 +469,7 @@ p {
 /* Disclaimer */
 .disclaimer {
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    align-items: center;
 }
 
@@ -510,7 +510,7 @@ p {
 /* financial-highlights */
 .financial-highlights {
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    align-items: center;
    background-color: #f1ecea;
 }
@@ -597,7 +597,7 @@ p {
 /* investment-breakdown */
 .investment-breakdown {
    display: flex;
-   height: 100vh;
+   min-height: 100vh;
    align-items: center;
    background-color: #f1ecea;
 }
@@ -634,13 +634,13 @@ p {
    border: 1px solid #372E2C;
 }
 
-.investment-breakdown .details .table-container .table>div > span {
+.investment-breakdown .details .table-container .table>div>span {
    font-size: 11px;
    font-weight: 500;
    color: #372E2C;
 }
 
-.investment-breakdown .details .table-container{
+.investment-breakdown .details .table-container {
    padding-bottom: 40px;
    margin-bottom: 60px;
    border-bottom: 1px solid #372E2C;
@@ -661,11 +661,48 @@ p {
 }
 
 .investment-breakdown .details .chart .graph {
-     width: 50%;
+   width: 50%;
 }
 
-.investment-breakdown .details .chart .graph img{
+.investment-breakdown .details .chart .graph img {
    max-width: 100%;
+}
+
+/* success-points */
+
+.success-points {
+   display: flex;
+   min-height: 100vh;
+   align-items: center;
+}
+
+.success-points p {
+   font-size: 16px;
+   color: #372E2C;
+   font-weight: 500;
+}
+
+.success-points .points {
+   max-width: 700px;
+   margin-left: auto;
+   margin-top: 100px;
+}
+
+.success-points .points .point-details {
+   display: flex;
+   gap: 150px;
+   margin-bottom: 20px;
+   color: #372e2c;
+}
+
+.success-points .points .point-details .number {
+   font-size: 12px;
+   margin-top: 5px;
+   font-weight: bold;
+}
+
+.success-points .points .point-details p {
+   font-family: "Roobert-Light", sans-serif;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -711,12 +748,14 @@ p {
       width: 55px;
    }
 
-   .financial-highlights .content-container, .investment-breakdown .content-container {
+   .financial-highlights .content-container,
+   .investment-breakdown .content-container {
       grid-template-columns: 1fr;
       gap: 20px;
    }
 
-   .financial-highlights .details, .investment-breakdown .details {
+   .financial-highlights .details,
+   .investment-breakdown .details {
       max-width: 726px;
       margin: auto;
       width: 100%;
@@ -820,7 +859,11 @@ p {
 
    .growth-journey .brand-description,
    .growth-journey .year,
-   .review .details p {
+   .review .details p,
+   .disclaimer .details p,
+   .investment-breakdown .details .table-container .table>div,
+   .success-points p,
+   .success-points .points .point-details p {
       font-size: 14px;
    }
 
@@ -837,11 +880,13 @@ p {
       font-size: 14px !important;
    }
 
-   .card-section .key-offerings .points {
+   .card-section .key-offerings .points,
+   .success-points .points .point-details {
       gap: 20px;
    }
 
-   .disclaimer .content-container .description {
+   .disclaimer .content-container .description,
+   .investment-breakdown .details .chart {
       flex-direction: column;
       gap: 20px;
    }
@@ -849,10 +894,6 @@ p {
    .disclaimer h1 {
       justify-content: flex-start;
       min-width: 100%;
-   }
-
-   .disclaimer .details p {
-      font-size: 14px;
    }
 
    .disclaimer .info {
@@ -879,22 +920,27 @@ p {
       width: fit-content;
    }
 
-   .investment-breakdown .details .table-container .table>div{
-      font-size: 14px;
-   }
-
-   .investment-breakdown .details .table-container{
+   .investment-breakdown .details .table-container {
       gap: 10px;
       margin-bottom: 20px;
    }
 
-   .investment-breakdown .details .chart{
-      flex-direction: column;
-      gap: 20px;
-   }
-
-   .investment-breakdown .details .chart .des, .investment-breakdown .details .chart .graph {
+   .investment-breakdown .details .chart .des,
+   .investment-breakdown .details .chart .graph {
       width: 100%;
       text-align: center;
+   }
+
+   .success-points .points {
+      margin-top: 50px;
+      max-width: 100%;
+   }
+
+   .success-points .points .point-details h3 {
+      font-size: 16px
+   }
+
+   .success-points .points .point-details .number {
+      margin-top: 3px;
    }
 }
