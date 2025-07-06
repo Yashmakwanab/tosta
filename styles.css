@@ -1,518 +1,596 @@
- body,
- h1,
- h2,
- h3,
- p {
-    font-family: "Roboto", sans-serif;
-    padding: 0;
-    margin: 0;
- }
-
- .font-bold {
-    font-weight: bold;
- }
-
- .font-medium {
-    font-weight: 500;
- }
-
- .container {
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
- }
-
- /* Banner */
- .banner {
-    background-image: url('../images/banner.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    color: white;
- }
-
- .banner .content-container {
-    position: relative;
-    height: 100%;
- }
-
- .banner .header {
-    border-bottom: 1px solid #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 15px 10px 15px;
- }
-
- .banner .header .logo,
- .banner .header .brand-info {
-    display: flex;
-    align-items: center;
- }
-
- .banner .header .logo .des,
- .banner .header .brand-info .des {
-    font-size: 18px;
-    font-weight: 300;
- }
-
- .banner .header .logo {
-    gap: 147px;
- }
-
- .banner .header .logo img {
-    max-height: 44px;
- }
-
- .banner .header .brand-info {
-    gap: 117px;
- }
-
- .banner .heading {
-    font-size: 40px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 30%;
-    right: 0;
- }
-
- /* Review */
- .review {
-    display: flex;
-    height: 100vh;
-    align-items: center;
- }
-
- .review .content-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
- }
-
- .review h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #372e2c;
-    display: flex;
-    justify-content: center;
- }
-
- .review .details h1 {
-    font-size: 28px;
-    font-weight: 500;
-    color: #372e2c;
-    margin-bottom: 60px;
- }
-
- .review .details p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #372e2c;
-    margin-bottom: 60px;
- }
-
- .review .details .rating-container {
-    display: flex;
-    align-items: flex-end;
- }
-
- .review .details .google-logo {
-    width: 30px;
-    margin-right: 20px;
- }
-
- .review .details .stars {
-    color: #372e2c;
-    font-size: 20px;
-    margin-right: 12px;
- }
-
- .review .details .rating-value {
-    font-weight: bold;
-    font-size: 18px;
-    color: #372e2c;
- }
-
- .review .background-banner {
-    background-image: url("/images/bg_layer.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
- }
-
- /* Listing */
- .listing {
-    display: flex;
-    height: 100vh;
-    align-items: center;
- }
-
- .listing .background-banner {
-    background-image: url("/images/bg_layer.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
- }
-
- .listing .brand-card {
-    width: 100%;
-    padding: 50px 0;
- }
-
- .listing .info-row {
-    background-color: #eeedea;
-    display: flex;
-    min-height: 54.77px;
-    align-items: center;
-    max-width: 1024px;
-    margin: auto;
-    margin-bottom: 11.52px;
-    padding: 10px 42px 10px 21px;
- }
-
- .listing .info-label {
-    font-weight: normal;
-    color: #372E2C;
-    font-size: 16px;
-    width: 150px;
-    border-right: 1px solid #372E2C;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    font-weight: 700;
-    padding: 7.6px 0;
- }
-
- .listing .info-value {
-    color: #372E2C;
-    font-size: 15px;
-    flex: 1;
-    display: flex;
-    justify-content: end;
-    box-sizing: border-box;
-    padding: 7.6px 0 7.6px 10px;
- }
-
- /* Card section */
- .card-section {
-    background-image: url('/images/bg_card_layer.png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    color: white;
-    align-items: center;
- }
-
- .card-section .card {
-    background: #eeedea;
-    max-width: 800px;
-    padding: 20px 20px 30px 20px;
-    position: relative;
- }
-
- .card-section .card:after {
-    background:
-       linear-gradient(-45deg, transparent 16px, #eeedea 0),
-       linear-gradient(45deg, transparent 16px, #eeedea 0);
-    background-repeat: repeat-x;
-    background-position: left bottom;
-    background-size: 21px 32px;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 32px;
-    position: absolute;
-    left: 0px;
-    bottom: -17px;
- }
-
- .card-section .card .card-details {
-    padding: 50px 0 20px 0;
-    border-bottom: 1px solid #372E2C;
- }
-
- .card-section .card.with-desc .card-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
- }
-
- .card-section .card .card-details h1 {
-    font-size: 30px;
-    color: #372E2C;
-    font-weight: bold;
-    max-width: 500px;
-    text-align: end;
-    margin-left: auto;
-    margin-right: 40px;
- }
-
- .card-section .card .card-details p {
-    font-size: 16px;
-    color: #372E2C;
- }
-
- .card-section .card.with-desc .card-details h1 {
-    margin-left: 0;
- }
-
- /* growth-journey */
- .growth-journey {
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
- }
-
- .growth-journey .background-banner {
-    background-image: url("images/bg_layer_top.png");
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
- }
-
- .growth-journey .parent-container {
-    display: flex;
-    gap: 73px;
- }
-
- .growth-journey .brand-tagline {
-    display: flex;
-    justify-content: space-between;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 31px;
- }
-
- .growth-journey .brand-content {
-    margin-bottom: 90px;
- }
-
- .growth-journey .brand-title {
-    font-size: 20px;
-    margin-bottom: 8px;
-    font-weight: bold;
- }
-
- .growth-journey .brand-description {
-    font-size: 16px;
- }
-
- .growth-journey .table-container {
-    width: 100%;
- }
-
- .growth-journey .brand-card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
- }
-
- .growth-journey .info-row {
-    background-color: #F6F5F3;
-    display: flex;
-    align-items: center;
-    border: 1px solid #362E2C;
- }
-
- .growth-journey .info-label {
-    color: #372E2C;
-    font-size: 18px;
-    width: 105px;
-    border-right: 1px solid #362E2C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 15px 0;
- }
-
- .growth-journey .info-value {
-    color: #372E2C;
-    font-size: 16px;
-    flex: 1;
-    display: flex;
-    box-sizing: border-box;
-    padding: 10px 40px;
-    justify-content: space-between;
- }
-
- .growth-journey .timeline {
-    border-bottom: 1px solid #362E2C;
-    display: flex;
-    gap: 19px;
-    padding-bottom: 10px;
- }
-
- .growth-journey .timeline-column {
-    display: flex;
-    flex-direction: column;
- }
-
- .growth-journey .dot {
-    width: 6px;
-    height: 6px;
-    background-color: #99BCAB;
-    border-radius: 100%;
-    margin: auto;
-    margin-bottom: 15px;
- }
-
- .growth-journey .column {
-    background-image: linear-gradient(180deg, #f4f6ee 0%, #cbddb7 100%);
-    width: 65px;
-    margin-bottom: 13px;
- }
-
- .growth-journey .year {
-    color: #372E2C;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 500;
- }
-
-
- @media only screen and (max-width: 1280px) {
-    .banner .header .logo {
-       gap: 50px;
-    }
-
-    .banner .header .logo .des,
-    .banner .header .brand-info .des {
-       font-size: 15px;
-    }
-
-    .banner .header .brand-info {
-       gap: 50px;
-    }
-
-    .banner .header .logo img {
-       min-height: auto;
-    }
-
-    .review .details h1 {
-       margin-bottom: 40px;
-    }
-
-    .review .details p {
-       margin-bottom: 40px;
-    }
-
-    .growth-journey .parent-container {
-       gap: 50px;
-    }
-
-    .growth-journey .info-label {
-       font-size: 16px;
-    }
-
-    .growth-journey .info-value {
-       font-size: 14px;
-       padding: 10px 20px;
-    }
-
-    .growth-journey .column {
-       width: 55px;
-    }
- }
-
- @media only screen and (max-width: 1024px) {
-    .growth-journey .parent-container {
-       flex-direction: column;
-       gap: 40px;
-    }
-
-    .growth-journey .timeline {
-       margin: auto;
-    }
- }
-
- @media only screen and (max-width: 768px) {
-    .banner .header {
-       flex-direction: column;
-       gap: 20px;
-       padding: 30px 10px 10px 10px;
-    }
-
-    .banner .header .logo img {
-       max-height: 30px;
-    }
-
-    .banner .header .logo,
-    .banner .header .brand-info {
-       width: 100%;
-       justify-content: space-between;
-    }
-
-    .review h1 {
-       justify-content: start;
-    }
-
-    .review .content-container {
-       gap: 20px;
-       grid-template-columns: 1fr;
-    }
-
-    .listing .info-row {
-       flex-direction: column;
-       padding: 10px 21px 10px 21px;
-    }
-
-    .listing .info-label {
-       width: 100%;
-       border-right: none;
-       border-bottom: 1px solid #372E2C;
-    }
-
-    .listing .info-value {
-       width: 100%;
-       justify-content: start;
-       padding: 7.6px 0 7.6px 0;
-    }
-
-    .card-section .card .card-details h1 {
-       font-size: 24px;
-    }
-
-    .card-section .card.with-desc .card-details {
-       flex-direction: column;
-       align-content: flex-start;
-       flex-wrap: wrap;
-       gap: 10px;
-    }
-
-    .growth-journey .info-label {
-       width: 80px;
-       font-size: 14px;
-    }
-
-    .growth-journey .info-value {
-       flex-direction: column;
-       font-size: 12px;
-    }
-
-    .growth-journey .brand-content {
-       margin-bottom: 30px;
-    }
-
-    .growth-journey .brand-tagline {
-       font-size: 20px;
-    }
-
-    .growth-journey .brand-title {
-       font-size: 18px;
-    }
-
-    .growth-journey .brand-description,
-    .growth-journey .year {
-       font-size: 14px;
-    }
- }
+@font-face {
+   font-family: 'MyCustomFont';
+   src: url('./fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+   font-family: "MyCustomFont", sans-serif;
+   padding: 0;
+   margin: 0;
+}
+
+.mb-120 {
+   margin-bottom: 120px !important;
+}
+
+.font-bold {
+   font-weight: bold;
+}
+
+.font-medium {
+   font-weight: 500;
+}
+
+.container {
+   max-width: 1440px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+/* Banner */
+.banner {
+   background-image: url('../images/banner.png');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   display: flex;
+   color: white;
+}
+
+.banner .content-container {
+   position: relative;
+   height: 100%;
+}
+
+.banner .header {
+   border-bottom: 1px solid #fff;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 30px 15px 10px 15px;
+}
+
+.banner .header .logo,
+.banner .header .brand-info {
+   display: flex;
+   align-items: center;
+}
+
+.banner .header .logo .des,
+.banner .header .brand-info .des {
+   font-size: 18px;
+   font-weight: 300;
+}
+
+.banner .header .logo {
+   gap: 147px;
+}
+
+.banner .header .logo img {
+   max-height: 44px;
+}
+
+.banner .header .brand-info {
+   gap: 117px;
+}
+
+.banner .heading {
+   font-size: 40px;
+   font-weight: bold;
+   position: absolute;
+   bottom: 30%;
+   right: 0;
+}
+
+/* Review */
+.review {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+}
+
+.review .content-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.review h1 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #372e2c;
+   display: flex;
+   justify-content: center;
+}
+
+.review .details h1 {
+   font-size: 28px;
+   font-weight: 500;
+   color: #372e2c;
+   margin-bottom: 60px;
+}
+
+.review .details p {
+   font-size: 16px;
+   font-weight: 400;
+   color: #372e2c;
+   margin-bottom: 60px;
+}
+
+.review .details .rating-container {
+   display: flex;
+   align-items: flex-end;
+}
+
+.review .details .google-logo {
+   width: 30px;
+   margin-right: 20px;
+}
+
+.review .details .stars {
+   color: #372e2c;
+   font-size: 20px;
+   margin-right: 12px;
+}
+
+.review .details .rating-value {
+   font-weight: bold;
+   font-size: 18px;
+   color: #372e2c;
+}
+
+.review .background-banner {
+   background-image: url("/images/bg_layer.png");
+   background-repeat: no-repeat;
+   background-position: left center;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+}
+
+/* Listing */
+.listing {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+}
+
+.listing .background-banner {
+   background-image: url("/images/bg_layer.png");
+   background-repeat: no-repeat;
+   background-position: left center;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+}
+
+.listing .brand-card {
+   width: 100%;
+   padding: 50px 0;
+}
+
+.listing .info-row {
+   background-color: #eeedea;
+   display: flex;
+   min-height: 54.77px;
+   align-items: center;
+   max-width: 1024px;
+   margin: auto;
+   margin-bottom: 11.52px;
+   padding: 10px 42px 10px 21px;
+}
+
+.listing .info-label {
+   font-weight: normal;
+   color: #372E2C;
+   font-size: 16px;
+   width: 150px;
+   border-right: 1px solid #372E2C;
+   display: flex;
+   align-items: center;
+   box-sizing: border-box;
+   font-weight: 700;
+   padding: 7.6px 0;
+}
+
+.listing .info-value {
+   color: #372E2C;
+   font-size: 15px;
+   flex: 1;
+   display: flex;
+   justify-content: end;
+   box-sizing: border-box;
+   padding: 7.6px 0 7.6px 10px;
+}
+
+/* Card section */
+.card-section {
+   background-image: url('/images/bg_card_layer.png');
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   display: flex;
+   color: white;
+   align-items: center;
+}
+
+.card-section .card {
+   background: #eeedea;
+   max-width: 680px;
+   padding: 20px 20px 30px 20px;
+   position: relative;
+}
+
+.card-section .card:after {
+   background:
+      linear-gradient(-45deg, transparent 16px, #eeedea 0),
+      linear-gradient(45deg, transparent 16px, #eeedea 0);
+   background-repeat: repeat-x;
+   background-position: left bottom;
+   background-size: 12px 32px;
+   content: "";
+   display: block;
+   width: 100%;
+   height: 32px;
+   position: absolute;
+   left: 0px;
+   bottom: -17px;
+}
+
+.card-section .card .card-details {
+   padding: 50px 0 20px 0;
+   border-bottom: 1px solid #372E2C;
+}
+
+.card-section .card.with-desc .card-details {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.card-section .card .card-details h1 {
+   font-size: 30px;
+   color: #372E2C;
+   font-weight: bold;
+   max-width: 500px;
+   text-align: end;
+   margin-left: auto;
+   margin-right: 40px;
+}
+
+.card-section .card .card-details p {
+   font-size: 16px;
+   color: #372E2C;
+}
+
+.card-section .card.with-desc .card-details h1 {
+   margin-left: 0;
+}
+
+/* key-offerings */
+.card-section .key-offerings {
+   padding: 50px 0 20px 10px !important;
+}
+
+.card-section .key-offerings h1 {
+   font-size: 30px;
+   color: #372E2C;
+   font-weight: bold;
+   text-align: start !important;
+   margin-left: 0 !important;
+   margin-bottom: 15px;
+   margin-top: 100px;
+}
+
+.card-section .key-offerings h2 {
+   font-size: 18px;
+   color: #372E2C;
+   font-weight: bold;
+   margin-bottom: 50px;
+}
+
+.card-section .key-offerings h3 {
+   font-size: 18px;
+   color: #372E2C;
+   font-weight: 500;
+}
+
+.card-section .key-offerings p {
+   margin-bottom: 50px;
+   font-size: 18px !important;
+}
+
+.card-section .key-offerings .points {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.card-section .key-offerings .points p {
+   margin-bottom: 0;
+}
+
+/* growth-journey */
+.growth-journey {
+   display: flex;
+   min-height: 100vh;
+   align-items: center;
+}
+
+.growth-journey .background-banner {
+   background-image: url("images/bg_layer_top.png");
+   background-repeat: no-repeat;
+   background-position: top center;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+}
+
+.growth-journey .parent-container {
+   display: flex;
+   gap: 73px;
+}
+
+.growth-journey .brand-tagline {
+   display: flex;
+   justify-content: space-between;
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 31px;
+   color: #372E2C;
+}
+
+.growth-journey .brand-content {
+   margin-bottom: 90px;
+}
+
+.growth-journey .brand-title {
+   font-size: 20px;
+   margin-bottom: 8px;
+   font-weight: bold;
+   color: #372E2C;
+}
+
+.growth-journey .brand-description {
+   font-size: 16px;
+   color: #372E2C;
+}
+
+.growth-journey .table-container {
+   width: 100%;
+}
+
+.growth-journey .brand-card {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.growth-journey .info-row {
+   background-color: #F6F5F3;
+   display: flex;
+   align-items: center;
+   border: 1px solid #362E2C;
+}
+
+.growth-journey .info-label {
+   color: #372E2C;
+   font-size: 18px;
+   width: 105px;
+   border-right: 1px solid #362E2C;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   padding: 15px 0;
+}
+
+.growth-journey .info-value {
+   color: #372E2C;
+   font-size: 16px;
+   flex: 1;
+   display: flex;
+   box-sizing: border-box;
+   padding: 10px 40px;
+   justify-content: space-between;
+}
+
+.growth-journey .timeline {
+   border-bottom: 1px solid #362E2C;
+   display: flex;
+   gap: 19px;
+   padding-bottom: 10px;
+}
+
+.growth-journey .timeline-column {
+   display: flex;
+   flex-direction: column;
+}
+
+.growth-journey .dot {
+   width: 6px;
+   height: 6px;
+   background-color: #99BCAB;
+   border-radius: 100%;
+   margin: auto;
+   margin-bottom: 15px;
+}
+
+.growth-journey .column {
+   background-image: linear-gradient(180deg, #f4f6ee 0%, #cbddb7 100%);
+   width: 65px;
+   margin-bottom: 13px;
+}
+
+.growth-journey .year {
+   color: #372E2C;
+   font-size: 16px;
+   text-align: center;
+   font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1280px) {
+   .banner .header .logo {
+      gap: 50px;
+   }
+
+   .banner .header .logo .des,
+   .banner .header .brand-info .des {
+      font-size: 15px;
+   }
+
+   .banner .header .brand-info {
+      gap: 50px;
+   }
+
+   .banner .header .logo img {
+      min-height: auto;
+   }
+
+   .review .details h1 {
+      margin-bottom: 40px;
+   }
+
+   .review .details p {
+      margin-bottom: 40px;
+   }
+
+   .growth-journey .parent-container {
+      gap: 50px;
+   }
+
+   .growth-journey .info-label {
+      font-size: 16px;
+   }
+
+   .growth-journey .info-value {
+      font-size: 14px;
+      padding: 10px 20px;
+   }
+
+   .growth-journey .column {
+      width: 55px;
+   }
+}
+
+@media only screen and (max-width: 1024px) {
+   .growth-journey .parent-container {
+      flex-direction: column;
+      gap: 40px;
+   }
+
+   .growth-journey .timeline {
+      margin: auto;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .mb-120 {
+      margin-bottom: 20px !important;
+   }
+
+   .banner .header {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 10px 10px 10px;
+   }
+
+   .banner .header .logo img {
+      max-height: 30px;
+   }
+
+   .banner .header .logo,
+   .banner .header .brand-info {
+      width: 100%;
+      justify-content: space-between;
+   }
+
+   .review h1 {
+      justify-content: start;
+   }
+
+   .review .content-container {
+      gap: 20px;
+      grid-template-columns: 1fr;
+   }
+
+   .listing .info-row {
+      flex-direction: column;
+      padding: 10px 21px 10px 21px;
+   }
+
+   .listing .info-label {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #372E2C;
+   }
+
+   .listing .info-value {
+      width: 100%;
+      justify-content: start;
+      padding: 7.6px 0 7.6px 0;
+   }
+
+   .card-section .card .card-details h1 {
+      font-size: 24px;
+   }
+
+   .card-section .card.with-desc .card-details {
+      flex-direction: column;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+   }
+
+   .growth-journey .info-label {
+      width: 80px;
+      font-size: 14px;
+   }
+
+   .growth-journey .info-value {
+      flex-direction: column;
+      font-size: 12px;
+   }
+
+   .growth-journey .brand-content {
+      margin-bottom: 30px;
+   }
+
+   .growth-journey .brand-tagline {
+      font-size: 20px;
+   }
+
+   .growth-journey .brand-title {
+      font-size: 18px;
+   }
+
+   .growth-journey .brand-description,
+   .growth-journey .year {
+      font-size: 14px;
+   }
+
+   .card-section .key-offerings h1 {
+      margin-top: 0;
+   }
+
+   .card-section .key-offerings h2 {
+      margin-bottom: 20px;
+   }
+
+   .card-section .key-offerings p,
+   .card-section .key-offerings h3 {
+      font-size: 14px !important;
+   }
+
+   .card-section .key-offerings .points{
+      gap: 20px;
+   }
+}
