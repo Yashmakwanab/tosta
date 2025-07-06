@@ -668,9 +668,9 @@ p {
    max-width: 100%;
 }
 
-.header {
+.team-header {
    padding: 40px 40px 0px 40px;
-    margin-bottom: 40px;
+   margin-bottom: 40px;
    max-width: 900px;
 }
 
@@ -690,16 +690,31 @@ p {
    margin: 0;
 }
 
- .team-wrapper{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
+.team-wrapper {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
 
 /* Team section */
 .team-section {
    padding: 20px;
+}
+
+.fade {
+   animation-name: fade;
+   animation-duration: 1.5s;
+}
+
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+
+   to {
+      opacity: 1
+   }
 }
 
 /* Team member wrapper */
