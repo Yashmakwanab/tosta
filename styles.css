@@ -1,7 +1,35 @@
 @font-face {
-   font-family: 'MyCustomFont';
+   font-family: 'Roobert-Light';
+   src: url('./fonts/RoobertTRIAL-Light-BF67243fd502239.otf') format('opentype');
+   font-weight: lighter;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roobert-Regular';
    src: url('./fonts/RoobertTRIAL-Regular-BF67243fd53fdf2.otf') format('opentype');
    font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roobert-Medium';
+   src: url('./fonts/RoobertTRIAL-Medium-BF67243fd53e059.otf') format('opentype');
+   font-weight: medium;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roobert-Semi-Bold';
+   src: url('./fonts/RoobertTRIAL-SemiBold-BF67243fd54213d.otf') format('opentype');
+   font-weight: semi-bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roobert-Bold';
+   src: url('./fonts/RoobertTRIAL-Bold-BF67243fd540abb.otf') format('opentype');
+   font-weight: bold;
    font-style: normal;
 }
 
@@ -10,7 +38,7 @@ h1,
 h2,
 h3,
 p {
-   font-family: "MyCustomFont", sans-serif;
+   font-family: "Roobert-Regular", sans-serif;
    padding: 0;
    margin: 0;
 }
@@ -299,11 +327,13 @@ p {
    font-size: 18px;
    color: #372E2C;
    font-weight: 500;
+   font-family: "Roobert-Medium", sans-serif;
 }
 
 .card-section .key-offerings p {
    margin-bottom: 50px;
    font-size: 18px !important;
+   font-family: "Roobert-Light", sans-serif;
 }
 
 .card-section .key-offerings .points {
@@ -436,6 +466,46 @@ p {
    font-weight: 500;
 }
 
+/* Disclaimer */
+.disclaimer {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+}
+
+.disclaimer .content-container .description {
+   display: flex;
+}
+
+.disclaimer h1 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #372e2c;
+   display: flex;
+   justify-content: center;
+   min-width: 341px;
+   font-family: "Roobert-Bold", sans-serif;
+}
+
+.disclaimer .details p {
+   font-size: 16px;
+   color: #372e2c;
+   margin-bottom: 40px;
+   font-family: "Roobert-Light", sans-serif;
+}
+
+.disclaimer .info {
+   display: flex;
+   justify-content: end;
+   gap: 40px;
+   margin-top: 200px;
+}
+
+.disclaimer a {
+   font-size: 16px;
+   color: #372e2c;
+   text-decoration: none;
+}
 
 @media only screen and (max-width: 1280px) {
    .banner .header .logo {
@@ -489,6 +559,10 @@ p {
 
    .growth-journey .timeline {
       margin: auto;
+   }
+
+   .disclaimer .info {
+      margin-top: 100px;
    }
 }
 
@@ -573,7 +647,8 @@ p {
    }
 
    .growth-journey .brand-description,
-   .growth-journey .year {
+   .growth-journey .year,
+   .review .details p {
       font-size: 14px;
    }
 
@@ -590,7 +665,32 @@ p {
       font-size: 14px !important;
    }
 
-   .card-section .key-offerings .points{
+   .card-section .key-offerings .points {
       gap: 20px;
+   }
+
+   .disclaimer .content-container .description {
+      flex-direction: column;
+      gap: 20px;
+   }
+
+   .disclaimer h1 {
+      justify-content: flex-start;
+      min-width: 100%;
+   }
+
+   .disclaimer .details p {
+      font-size: 14px;
+   }
+
+   .disclaimer .info {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 0;
+   }
+
+   .disclaimer .info span {
+      display: none;
    }
 }
