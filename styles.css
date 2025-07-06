@@ -668,70 +668,48 @@ p {
    max-width: 100%;
 }
 
-.team-header {
-   padding: 40px 40px 0px 40px;
-   margin-bottom: 40px;
-   max-width: 900px;
+/* Team section */
+.team-section {
+   display: flex;
+   min-height: 100vh;
+   align-items: center;
 }
 
-.title {
-   font-size: 20px;
-   font-weight: bold;
+.team-section .container {
+   width: -webkit-fill-available;
+}
+
+.team-section .header {
+   max-width: 900px;
+   margin-bottom: 60px;
+}
+
+.team-section h1 {
+   font-size: 25px;
    color: #372e2c;
    margin-bottom: 20px;
-   line-height: 1.2;
+   font-weight: bold;
 }
 
-.subtitle {
+.team-section p {
    color: #372e2c;
-   font-size: 14px;
-   line-height: 1.5;
-   max-width: 600px;
+   font-size: 16px !important;
+   font-family: "Roobert-Light", sans-serif;
+   max-width: 690px;
    margin: 0;
 }
 
-.team-wrapper {
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-/* Team section */
-.team-section {
-   padding: 20px;
-}
-
-.fade {
-   animation-name: fade;
-   animation-duration: 1.5s;
-}
-
-@keyframes fade {
-   from {
-      opacity: .4
-   }
-
-   to {
-      opacity: 1
-   }
-}
-
-/* Team member wrapper */
-.team-member-wrapper {
+.team-section .team-member-wrapper {
    flex: 0 0 80%;
    scroll-snap-align: start;
-   background-color: #f9f9f9;
-   border: 1px solid #ddd;
    padding: 1rem;
-   border-radius: 8px;
    min-width: 300px;
-   padding: 10px 30px;
-   background-color: #eeedea;
+   padding: 20px 30px;
+   background-color: #F6F5F3;
+   position: relative;
 }
 
-/* Team member card */
-.team-member {
+.team-section .team-member {
    color: #372e2c;
    padding: 18px;
    display: grid;
@@ -739,10 +717,9 @@ p {
    align-items: center;
 }
 
-/* Member info (name and title with border) */
-.member-info {
+.team-section .member-info {
    text-align: center;
-   border-right: 1px solid #999;
+   border-right: 1px solid #372e2c;
    height: 100%;
    display: flex;
    flex-direction: column;
@@ -750,7 +727,7 @@ p {
    padding-right: 30px;
 }
 
-.member-name {
+.team-section .member-name {
    font-size: 16px;
    font-weight: 600;
    color: #372e2c;
@@ -758,7 +735,7 @@ p {
    text-align: end;
 }
 
-.member-title {
+.team-section .member-title {
    font-size: 16px;
    font-weight: 600;
    color: #372e2c;
@@ -766,12 +743,11 @@ p {
    text-align: end;
 }
 
-/* Member description */
-.member-description {
+.team-section .member-description {
    padding-left: 30px;
 }
 
-.member-description p {
+.team-section .member-description p {
    font-size: 14px;
    color: #372e2c;
    line-height: 1.5;
@@ -779,15 +755,13 @@ p {
    text-align: left;
 }
 
-/* Divider */
-.divider {
+.team-section .divider {
    height: 1px;
-   background-color: #999;
+   background-color: #372e2c;
    margin: 0;
 }
 
-/* carousal */
-.carousel-container {
+.team-section .carousel-container {
    overflow-x: auto;
    scroll-snap-type: x mandatory;
    display: flex;
@@ -795,23 +769,28 @@ p {
    -webkit-overflow-scrolling: touch;
 }
 
-.carousel-track {
+.team-section .carousel-track {
    display: flex;
    gap: 1rem;
    padding: 1rem;
 }
 
-.caraosal-icon {
+.team-section .caraosal-icon {
    width: 50px;
    height: 50px;
 }
 
-.flex {
+.team-section .caraosal-controls {
    display: flex;
+   justify-content: end;
+   gap: 10px;
+   margin-top: 10px;
 }
 
-.items-center {
-   align-items: center;
+.team-section .caraosal-controls>div {
+   font-size: 25px;
+   color: #372e2c;
+   cursor: pointer;
 }
 
 /* success-points */
@@ -1090,38 +1069,41 @@ p {
       margin-top: 3px;
    }
 
-   .header {
-      padding: 20px;
-   }
-
-   .title {
+   .team-section .title {
       font-size: 18px;
    }
 
-   .team-section {
-      margin: 0 20px;
-      padding: 10px;
-   }
-
-   .team-member {
+   .team-section .team-member {
       grid-template-columns: 1fr;
       height: auto;
       gap: 20px;
       text-align: center;
+      padding: 0;
    }
 
-   .member-info {
+   .team-section .member-info {
       border-right: none;
       border-bottom: 1px solid #372e2c;
       padding-right: 0;
       padding-bottom: 20px;
+      height: fit-content;
    }
 
-   .member-description {
+   .team-section .member-description {
       padding-left: 0;
    }
 
-   .member-description p {
+   .team-section .member-description p {
+      text-align: center;
+      padding-bottom: 20px;
+   }
+
+   .team-section .team-member-wrapper {
+      min-width: auto;
+   }
+
+   .team-section .member-name,
+   .team-section .member-title {
       text-align: center;
    }
 }
