@@ -910,12 +910,15 @@ p {
 
 /* Revenue Screen */
 
-.revenue{
-   padding-top: 40px;
-   min-height: 100vh;
+.revenue {
+   display: flex;
+   align-items: center;
+   position: relative;
+   overflow: hidden;
+   padding: 150px 0;
 }
 
-.revenue-title-wrapper{
+.revenue-title-wrapper {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
@@ -929,37 +932,37 @@ p {
    max-width: 600px;
 }
 
-.revenue-card-img{
-  width: -webkit-fill-available;
+.revenue-card-img {
+   width: -webkit-fill-available;
 }
 
 .revenue-card-wrapper {
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-evenly;
-  background-color: #f1ecea;
+   padding: 50px 20px;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: space-evenly;
+   background-color: #f1ecea;
 }
 
-.revenue-card{
-  max-width: 360px;
-  padding: 20px;
-  background-color: white;
+.revenue-card {
+   max-width: 360px;
+   padding: 20px;
+   background-color: white;
 }
 
 .revenue-card-title {
-  margin-bottom: 10px;
-  font-size: 19px;
-  font-weight: bold;
+   margin-bottom: 10px;
+   font-size: 19px;
+   font-weight: bold;
 }
 
-.revenue-card-description{
-  margin-top: 20px;
-  font-weight: 300;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #504f4fc3;
+.revenue-card-description {
+   margin-top: 20px;
+   font-weight: 300;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #504f4fc3;
 }
 
 .revenue-footer {
@@ -1053,12 +1056,12 @@ p {
       margin-top: 100px;
    }
 
-.revenue-title-wrapper {
-   flex-wrap: wrap;
-   justify-content: center;
-   margin-block: 40px;
-   gap: 20px;
-}
+   .revenue-title-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-block: 40px;
+      gap: 20px;
+   }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1266,31 +1269,20 @@ p {
       text-align: center;
    }
 
-   .revenue-footer{
+   .revenue-footer {
       gap: 10px;
       flex-wrap: wrap;
    }
-
-   .banner,
-   .review,
-   .listing,
-   .growth-journey,
-   .investment-breakdown,
-   .financial-highlights,
-   .card-section {
-      /* background-attachment: scroll; */
-      /* Fallback for mobile devices */
-   }
 }
 
-@media only screen and (max-width: 500px){
-   .revenue-card-wrapper{
+@media only screen and (max-width: 500px) {
+   .revenue-card-wrapper {
       padding-inline: 5px;
    }
 }
 
-@media only screen and (max-width: 380px){
-   .revenue-card-img{
+@media only screen and (max-width: 380px) {
+   .revenue-card-img {
       width: 100%;
    }
 }
