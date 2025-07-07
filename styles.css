@@ -130,17 +130,6 @@ p {
    padding: 150px 0;
 }
 
-.review .background-banner {
-   background-image: url("/images/bg_layer.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
-}
-
 .review .content-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -199,17 +188,6 @@ p {
    position: relative;
    overflow: hidden;
    padding: 150px 0;
-}
-
-.listing .background-banner {
-   background-image: url("/images/bg_layer.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
 }
 
 .listing .brand-card {
@@ -399,17 +377,6 @@ p {
    padding: 150px 0;
 }
 
-.growth-journey .background-banner {
-   background-image: url("images/bg_layer_top.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
-}
-
 .growth-journey .parent-container {
    display: flex;
    gap: 73px;
@@ -567,17 +534,6 @@ p {
    padding: 150px 0;
 }
 
-.financial-highlights .background-banner {
-   background-image: url("/images/bg_layer.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
-}
-
 .financial-highlights .content-container {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -667,17 +623,6 @@ p {
    position: relative;
    overflow: hidden;
    padding: 150px 0;
-}
-
-.investment-breakdown .background-banner {
-   background-image: url("/images/bg_layer.png");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-attachment: fixed;
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   z-index: -1;
 }
 
 .investment-breakdown .content-container {
@@ -980,13 +925,21 @@ p {
    color: #504f4fc3;
 }
 
-.revenue .background-banner {
-   background-image: url("images/bg_layer_top.png");
+.background-banner {
+   background-image: url("images/bg_layer.png");
    background-repeat: no-repeat;
-   background-position: top center;
+   background-position: left center;
+   background-attachment: fixed;
    height: 100%;
    width: 100%;
    position: absolute;
+   z-index: -1;
+}
+
+.review,
+.growth-journey,
+.investment-breakdown {
+   padding-bottom: 0;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1074,8 +1027,6 @@ p {
    }
 
    .banner .header {
-      flex-direction: column;
-      gap: 20px;
       padding: 30px 10px 10px 10px;
    }
 
@@ -1083,10 +1034,9 @@ p {
       max-height: 30px;
    }
 
-   .banner .header .logo,
    .banner .header .brand-info {
       width: 100%;
-      justify-content: space-between;
+      justify-content: end;
    }
 
    .review h1 {
@@ -1149,7 +1099,8 @@ p {
       font-size: 20px;
    }
 
-   .growth-journey .brand-title, .review .details h1 {
+   .growth-journey .brand-title,
+   .review .details h1 {
       font-size: 18px;
    }
 
@@ -1166,8 +1117,8 @@ p {
    .listing .info-value {
       font-size: 14px !important;
    }
-   
-   .card-section{
+
+   .card-section {
       min-height: auto;
    }
 
@@ -1310,8 +1261,8 @@ p {
    .listing .brand-card {
       padding: 0;
    }
-   
-   .revenue-card-wrapper{
+
+   .revenue-card-wrapper {
       max-width: 360px;
       margin: auto;
    }
@@ -1324,7 +1275,7 @@ p {
    .financial-highlights,
    .card-section,
    .revenue,
-    .disclaimer,
+   .disclaimer,
    .success-points,
    .team-section {
       background-attachment: scroll;
@@ -1342,10 +1293,18 @@ p {
    .team-section {
       padding: 100px 0;
    }
-}
 
-@media only screen and (max-width: 768px) {
+   .review,
+   .growth-journey,
+   .investment-breakdown {
+      padding-bottom: 0;
+   }
+
    .container {
       padding: 0 20px;
+   }
+
+   .background-banner {
+      display: none;
    }
 }
