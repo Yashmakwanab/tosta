@@ -36,7 +36,7 @@
         <div class="background-banner"></div>
         <div class="container">
             <div class="content-container">
-                <h1>
+                <h1 class="special-heading">
                     Tosta Cafe
                 </h1>
                 <div class="details">
@@ -149,7 +149,6 @@
                                 Tosta spot is set up for lively success.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -168,7 +167,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -186,7 +184,6 @@
                                 on the good times and conversations.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -204,7 +201,6 @@
                                 delicious and perfectly crafted.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -221,7 +217,6 @@
                                 always youthful, always refreshing.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -239,7 +234,6 @@
                                 great company and shared joy.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
                 <div class="team-member-wrapper">
                     <div class="team-member">
@@ -259,7 +253,6 @@
                                 approachable, and truly social spirit.</p>
                         </div>
                     </div>
-                    <div class="divider"></div>
                 </div>
             </div>
 
@@ -429,8 +422,7 @@
             <div class="revenue-card-wrapper">
                 <div class="revenue-card">
                     <div class="revenue-card-title">Dine-In Experiences</div>
-                    <img src="/images/revenue-1.png"
-                        alt="Dine-In Experience" class="revenue-card-img" />
+                    <img src="/images/revenue-1.png" alt="Dine-In Experience" class="revenue-card-img" />
                     <p class="revenue-card-description">
                         Our inviting in-store spaces are perfectly designed for lively conversations &
                         building genuine community, sparking joyful repeat visits every time!
@@ -439,8 +431,7 @@
 
                 <div class="revenue-card">
                     <div class="revenue-card-title">Takeaway & Food Aggregators</div>
-                    <img src="/images/revenue-2.png"
-                        alt="Takeaway & Food Aggregators" class="revenue-card-img" />
+                    <img src="/images/revenue-2.png" alt="Takeaway & Food Aggregators" class="revenue-card-img" />
                     <p class="revenue-card-description">
                         Grab your Tosta favorites on the go! We're seamlessly integrated with top apps
                         like Swiggy & Zomato for effortless reach and a steady flow of happy orders.
@@ -449,8 +440,7 @@
 
                 <div class="revenue-card">
                     <div class="revenue-card-title">Event & Group Orders</div>
-                    <img src="/images/revenue-2.png"
-                        alt="Event & Group Orders" class="revenue-card-img" />
+                    <img src="/images/revenue-2.png" alt="Event & Group Orders" class="revenue-card-img" />
                     <p class="revenue-card-description">
                         From office celebrations to vibrant events & exciting brand collaborations,
                         we're ready for high volume, pre-scheduled orders to spread Tosta joy & good
@@ -847,14 +837,43 @@
     </section>
     <script>
         $(document).ready(function () {
-            $('.slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                arrows: true,
-                prevArrow: $('#prevBtn'),
-                nextArrow: $('#nextBtn')
+            $(".slider")
+                .slick({
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    prevArrow: $('#prevBtn'),
+                    nextArrow: $('#nextBtn'),
+                    responsive: [
+                        {
+                            breakpoint: 1281,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+
+                            }
+                        }
+                    ]
+                })
+                .on("setPosition", function () {
+                    resizeSlider();
+                });
+
+            $(window).on("resize", function (e) {
+                resizeSlider();
             });
+
+            var slickHeight = $(".slick-track").outerHeight();
+
+            var slideHeight = $(".slick-track").find(".slick-slide").outerHeight();
+
+            function resizeSlider() {
+                if ($(window).width() > 768) {
+                $(".slick-track")
+                    .find(".slick-slide .team-member")
+                    .css("height", slickHeight + "px");
+            }
+        }
         });
     </script>
 </body>

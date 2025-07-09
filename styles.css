@@ -142,7 +142,10 @@ p {
    font-weight: bold;
    color: #372e2c;
    display: flex;
-   justify-content: center;
+}
+
+.review .special-heading {
+   margin-left: 40%;
 }
 
 .review .details h1 {
@@ -203,9 +206,13 @@ p {
    min-height: 54.77px;
    align-items: center;
    max-width: 1024px;
-   margin: auto;
+   margin-left: 20%;
    margin-bottom: 11.52px;
    padding: 10px 42px 10px 21px;
+}
+
+.listing .info-row:last-child {
+   margin-bottom: 0;
 }
 
 .listing .info-label {
@@ -736,28 +743,36 @@ p {
    margin: 0;
 }
 
+.slider {
+   margin-right: -16px;
+}
+
 .team-section .team-member-wrapper {
-   flex: 0 0 80%;
-   scroll-snap-align: start;
-   padding: 1rem;
-   min-width: 300px;
    padding: 20px 30px;
    background-color: #F6F5F3;
    position: relative;
+   margin-right: 16px;
+   display: flex !important;
+   height: 100%;
+}
+
+.slider .slick-slide>* {
+   flex: 1;
+   height: 100%;
 }
 
 .team-section .team-member {
    color: #372e2c;
    padding: 18px;
-   display: grid;
-   grid-template-columns: 350px 1fr;
+   display: flex;
    align-items: center;
+   border-bottom: 1px solid #372e2c;
 }
 
 .team-section .member-info {
    text-align: center;
    border-right: 1px solid #372e2c;
-   height: 100%;
+   height: -webkit-fill-available;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -770,6 +785,7 @@ p {
    color: #372e2c;
    margin: 0 0 8px 0;
    text-align: end;
+   white-space: nowrap;
 }
 
 .team-section .member-title {
@@ -778,6 +794,7 @@ p {
    color: #372e2c;
    margin: 0;
    text-align: end;
+   white-space: nowrap;
 }
 
 .team-section .member-description {
@@ -790,12 +807,6 @@ p {
    line-height: 1.5;
    margin: 0;
    text-align: left;
-}
-
-.team-section .divider {
-   height: 1px;
-   background-color: #372e2c;
-   margin: 0;
 }
 
 .team-section .carousel-container {
@@ -856,6 +867,10 @@ p {
    color: #372e2c;
 }
 
+.success-points .points .point-details:last-child {
+   margin-bottom: 0;
+}
+
 .success-points .points .point-details .number {
    font-size: 12px;
    margin-top: 5px;
@@ -880,7 +895,7 @@ p {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
-   margin-block: 60px;
+   margin-bottom: 60px;
 }
 
 .revenue-top-description {
@@ -927,13 +942,13 @@ p {
 }
 
 .revenue-footer {
-   margin-block: 60px;
+   margin-top: 60px;
    padding-top: 10px;
    display: flex;
    gap: 20px;
    justify-content: center;
    align-items: center;
-   font-size: 14px;
+   font-size: 18px;
    color: #504f4fc3;
 }
 
@@ -1028,8 +1043,16 @@ p {
    .revenue-title-wrapper {
       flex-wrap: wrap;
       justify-content: center;
-      margin-block: 40px;
+      margin-bottom: 40px;
       gap: 20px;
+   }
+
+   .review .special-heading {
+      margin-left: 30%;
+   }
+
+   .listing .info-row {
+      margin-left: 15%;
    }
 }
 
@@ -1216,11 +1239,11 @@ p {
    }
 
    .team-section .team-member {
-      grid-template-columns: 1fr;
       height: auto;
       gap: 20px;
       text-align: center;
       padding: 0;
+      flex-direction: column;
    }
 
    .team-section .member-info {
@@ -1229,6 +1252,7 @@ p {
       padding-right: 0;
       padding-bottom: 20px;
       height: fit-content;
+      width: 100%;
    }
 
    .team-section .member-description {
@@ -1252,6 +1276,10 @@ p {
    .revenue-footer {
       gap: 10px;
       flex-wrap: wrap;
+      margin-bottom: 0;
+      font-size: 14px;
+      margin-top: 40px;
+      padding-top: 0;
    }
 
    .revenue-top-description {
@@ -1260,10 +1288,6 @@ p {
 
    .banner .heading {
       font-size: 39px;
-   }
-
-   .revenue-footer {
-      margin-bottom: 0;
    }
 
    .revenue-title-wrapper {
@@ -1318,5 +1342,13 @@ p {
 
    .background-banner {
       display: none;
+   }
+
+   .review .special-heading {
+      margin-left: 0;
+   }
+
+   .listing .info-row {
+      margin-left: 0;
    }
 }
