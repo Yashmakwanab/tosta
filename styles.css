@@ -733,6 +733,7 @@ p {
    color: #372e2c;
    margin-bottom: 20px;
    font-weight: bold;
+   max-width: 380px;
 }
 
 .team-section p {
