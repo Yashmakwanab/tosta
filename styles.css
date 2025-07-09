@@ -328,6 +328,18 @@ p {
    padding: 50px 0 20px 10px !important;
 }
 
+.card-section .key-offerings::before {
+   background-image: url("/images/card_dots.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   height: 100%;
+   width: 100%;
+   content: "";
+   position: absolute;
+   left: 0;
+   top: -192px;
+}
+
 .card-section .key-offerings h1 {
    font-size: 25px;
    color: #372E2C;
