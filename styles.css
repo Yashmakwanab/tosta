@@ -340,7 +340,7 @@ p {
 }
 
 .card-section .key-offerings::before {
-   background-image: url("/images/card_dots.png");
+   background-image: url("/images/card_dots_2.png");
    background-repeat: no-repeat;
    background-position: left;
    height: 100%;
@@ -967,7 +967,7 @@ p {
 }
 
 .background-banner {
-   background-image: url("images/bg_layer.png");
+   background-image: url("images/success-points.png");
    background-repeat: no-repeat;
    background-position: left center;
    background-attachment: fixed;
@@ -993,7 +993,7 @@ p {
    padding-bottom: 0;
 }
 
-.fa-square-whatsapp{
+.fa-square-whatsapp {
    font-size: 18px;
 }
 
@@ -1052,6 +1052,11 @@ p {
       margin: auto;
       width: 100%;
    }
+
+   .background-banner-success-points,
+   .background-banner {
+      background-image: url("images/bg_layer.png");
+   }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1083,8 +1088,9 @@ p {
       margin-left: 15%;
    }
 
-   .background-banner-success-points{
-      display: none;
+   .background-banner-success-points,
+   .background-banner {
+      background-image: url("images/bg_layer.png");
    }
 }
 
