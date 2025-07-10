@@ -56,7 +56,7 @@ p {
 }
 
 .container {
-   max-width: 1440px;
+   max-width: 1540px;
    width: 100%;
    margin: 0 auto;
    padding: 0 50px;
@@ -372,6 +372,7 @@ p {
    font-size: 18px;
    color: #372E2C;
    font-weight: 500;
+   font-family: "Roobert-medium", sans-serif;
 }
 
 .card-section .key-offerings p {
@@ -521,7 +522,7 @@ p {
    font-weight: bold;
    color: #372e2c;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    min-width: 341px;
    font-family: "Roobert-Bold", sans-serif;
 }
@@ -568,7 +569,7 @@ p {
    font-weight: bold;
    color: #372e2c;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
 }
 
 .financial-highlights .details .table-header {
@@ -660,7 +661,7 @@ p {
    font-weight: bold;
    color: #372e2c;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
 }
 
 .investment-breakdown .details .table-container {
@@ -780,7 +781,7 @@ p {
    flex-direction: column;
    justify-content: center;
    padding-right: 20px;
-   min-width: 150px;
+   min-width: 200px;
 }
 
 .team-section .member-name {
@@ -901,8 +902,10 @@ p {
 .revenue-title-wrapper {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-around;
+   justify-content: space-between;
    margin-bottom: 60px;
+   color: #372E2C;
+   align-items: center;
 }
 
 .revenue-top-description {
@@ -978,6 +981,10 @@ p {
 .growth-journey,
 .investment-breakdown {
    padding-bottom: 0;
+}
+
+.fa-square-whatsapp{
+   font-size: 18px;
 }
 
 @media only screen and (max-width: 1280px) {
