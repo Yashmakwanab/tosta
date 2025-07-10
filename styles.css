@@ -95,6 +95,14 @@ p {
    align-items: center;
 }
 
+.banner .header .logo .desktop-logo {
+   display: block;
+}
+
+.banner .header .logo .mobile-logo {
+   display: none;
+}
+
 .banner .header .logo .des,
 .banner .header .brand-info .des {
    font-size: 18px;
@@ -142,10 +150,6 @@ p {
    font-weight: bold;
    color: #372e2c;
    display: flex;
-}
-
-.review .special-heading {
-   margin-left: 40%;
 }
 
 .review .details h1 {
@@ -206,7 +210,7 @@ p {
    min-height: 54.77px;
    align-items: center;
    max-width: 1024px;
-   margin-left: 20%;
+   margin: auto;
    margin-bottom: 11.52px;
    padding: 10px 42px 10px 21px;
 }
@@ -315,7 +319,7 @@ p {
    font-size: 25px;
    color: #372E2C;
    font-weight: bold;
-   max-width: 500px;
+   max-width: 450px;
    text-align: end;
    margin-left: auto;
    margin-right: 40px;
@@ -368,7 +372,6 @@ p {
    font-size: 18px;
    color: #372E2C;
    font-weight: 500;
-   font-family: "Roobert-Medium", sans-serif;
 }
 
 .card-section .key-offerings p {
@@ -440,7 +443,7 @@ p {
 }
 
 .growth-journey .info-row {
-   background-color: #faf5f5;
+   background-color: #f1ecea;
    display: flex;
    align-items: center;
    border: 1px solid #362E2C;
@@ -588,6 +591,7 @@ p {
 .financial-highlights .details .table-body .table-row>div {
    padding: 10px;
    border-right: 1px solid #372E2C;
+   color: #372e2c;
 }
 
 .financial-highlights .details .table-body .table-row>div:nth-child(1) {
@@ -725,7 +729,6 @@ p {
 }
 
 .team-section .header {
-   max-width: 900px;
    margin-bottom: 60px;
 }
 
@@ -734,14 +737,12 @@ p {
    color: #372e2c;
    margin-bottom: 20px;
    font-weight: bold;
-   max-width: 380px;
 }
 
 .team-section p {
    color: #372e2c;
    font-size: 16px !important;
    font-family: "Roobert-Light", sans-serif;
-   max-width: 690px;
    margin: 0;
 }
 
@@ -765,7 +766,7 @@ p {
 
 .team-section .team-member {
    color: #372e2c;
-   padding: 18px;
+   padding: 0 0 18px 0;
    display: flex;
    align-items: center;
    border-bottom: 1px solid #372e2c;
@@ -778,7 +779,8 @@ p {
    display: flex;
    flex-direction: column;
    justify-content: center;
-   padding-right: 30px;
+   padding-right: 20px;
+   min-width: 150px;
 }
 
 .team-section .member-name {
@@ -787,7 +789,6 @@ p {
    color: #372e2c;
    margin: 0 0 8px 0;
    text-align: end;
-   white-space: nowrap;
 }
 
 .team-section .member-title {
@@ -796,11 +797,15 @@ p {
    color: #372e2c;
    margin: 0;
    text-align: end;
-   white-space: nowrap;
+}
+
+.team-section .slick-track {
+   display: flex;
+   align-items: flex-end;
 }
 
 .team-section .member-description {
-   padding-left: 30px;
+   padding-left: 20px;
 }
 
 .team-section .member-description p {
@@ -931,9 +936,10 @@ p {
 }
 
 .revenue-card-title {
-   margin-bottom: 10px;
+   margin-bottom: 20px;
    font-size: 19px;
    font-weight: bold;
+   color: #372E2C;
 }
 
 .revenue-card-description {
@@ -941,6 +947,8 @@ p {
    font-weight: 300;
    padding-bottom: 15px;
    border-bottom: 1px solid #504f4fc3;
+   color: #372E2C;
+   font-family: "Roobert-Light", sans-serif;
 }
 
 .revenue-footer {
@@ -951,7 +959,8 @@ p {
    justify-content: center;
    align-items: center;
    font-size: 18px;
-   color: #504f4fc3;
+   color: #372E2C;
+   font-family: "Roobert-Light", sans-serif;
 }
 
 .background-banner {
@@ -1067,13 +1076,26 @@ p {
       padding: 30px 10px 10px 10px;
    }
 
+   .banner .header .logo .desktop-logo {
+      display: none;
+   }
+
+   .banner .header .logo .mobile-logo {
+      display: block;
+   }
+
    .banner .header .logo img {
       max-height: 30px;
+   }
+
+   .banner .header .logo .des {
+      display: none;
    }
 
    .banner .header .brand-info {
       width: 100%;
       justify-content: end;
+      gap: 0;
    }
 
    .review h1 {
