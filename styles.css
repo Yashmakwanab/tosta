@@ -59,7 +59,7 @@ p {
    max-width: 1540px;
    width: 100%;
    margin: 0 auto;
-   padding: 0 50px;
+   padding: 0 70px;
 }
 
 /* Banner */
@@ -977,6 +977,17 @@ p {
    z-index: -1;
 }
 
+.background-banner-top {
+   background-image: url("images/bg_layer_top_2.png");
+   background-repeat: no-repeat;
+   background-position: top left;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 10%;
+}
+
 .background-banner-success-points {
    background-image: url("images/success-points.png");
    background-repeat: no-repeat;
@@ -998,6 +1009,10 @@ p {
 }
 
 @media only screen and (max-width: 1280px) {
+   .container {
+      padding: 0 50px;
+   }
+   
    .banner .header .logo {
       gap: 50px;
    }
@@ -1056,6 +1071,14 @@ p {
    .background-banner-success-points,
    .background-banner {
       background-image: url("images/bg_layer.png");
+   }
+
+   .background-banner-top {
+      background-position: top center;
+   }
+
+   .investment-breakdown h1, .financial-highlights h1 {
+      justify-content: center;
    }
 }
 
@@ -1391,7 +1414,7 @@ p {
       padding: 0 20px;
    }
 
-   .background-banner {
+   .background-banner, .background-banner-top {
       display: none;
    }
 
