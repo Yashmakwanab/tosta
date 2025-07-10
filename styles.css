@@ -977,6 +977,16 @@ p {
    z-index: -1;
 }
 
+.background-banner-success-points {
+   background-image: url("images/success-points.png");
+   background-repeat: no-repeat;
+   background-position: left center;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+}
+
 .review,
 .growth-journey,
 .investment-breakdown {
@@ -1071,6 +1081,10 @@ p {
 
    .listing .info-row {
       margin-left: 15%;
+   }
+
+   .background-banner-success-points{
+      display: none;
    }
 }
 
