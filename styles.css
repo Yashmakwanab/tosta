@@ -815,6 +815,9 @@ p {
    line-height: 1.5;
    margin: 0;
    text-align: left;
+   min-height: 192px;
+   display: flex;
+   align-items: center;
 }
 
 .team-section .carousel-container {
@@ -1336,6 +1339,7 @@ p {
    .team-section .member-description p {
       text-align: center;
       padding-bottom: 20px;
+      min-height: auto;
    }
 
    .team-section .team-member-wrapper {
