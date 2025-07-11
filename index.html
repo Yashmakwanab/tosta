@@ -45,7 +45,8 @@
                     Tosta Cafe
                 </h1>
                 <div class="details">
-                    <h1 class="title" data-aos="zoom-in-up" data-aos-duration="1000">Is a vibrant neighborhood spot where everyday moments turn
+                    <h1 class="title" data-aos="zoom-in-up" data-aos-duration="1000">Is a vibrant neighborhood spot
+                        where everyday moments turn
                         into something special.</h1>
                     <p data-aos="fade-up" data-aos-duration="1000">
                         Thanks to great food, handcrafted coffee, & a welcoming vibe. Our menu blends European
@@ -274,7 +275,8 @@
                     <div class="card-details key-offerings">
                         <h1 data-aos="fade-up" data-aos-duration="1000">Key Offerings</h1>
                         <h2 data-aos="fade-up" data-aos-duration="1000">More Than Just Food, It's a Celebration!</h2>
-                        <p data-aos="fade-up" data-aos-duration="1000">At Tosta, we believe every bite and every sip should spark joy and good
+                        <p data-aos="fade-up" data-aos-duration="1000">At Tosta, we believe every bite and every sip
+                            should spark joy and good
                             conversation. That's why we've poured our passion into crafting offerings that
                             truly bring people together...</p>
                         <div class="points">
@@ -314,14 +316,15 @@
             <div class="parent-container">
                 <div class="table-container">
                     <div class="brand-tagline" data-aos="fade-up" data-aos-duration="1000">
-                        <div >Tosta’s Growth Journey</div>
+                        <div>Tosta’s Growth Journey</div>
                         <div>2022 | 2025</div>
                     </div>
                     <div class="brand-content">
                         <div class="brand-title" data-aos="fade-up" data-aos-duration="1000">
                             From Spark to Soaring Success!
                         </div>
-                        <div class="brand-description" data-aos="fade-up" data-aos-duration="1000">Our journey has been an exciting adventure, growing from a
+                        <div class="brand-description" data-aos="fade-up" data-aos-duration="1000">Our journey has been
+                            an exciting adventure, growing from a
                             vibrant idea into a thriving
                             brand, always with a social spirit at our core.
                             Here's how Tosta has been building momentum for your future franchise success:</div>
@@ -478,7 +481,8 @@
         <div class="background-banner-success-points"></div>
         <div class="container">
             <div class="content-container">
-                <p data-aos="fade-up" data-aos-duration="1000">The cafe and QSR scene is absolutely buzzing, and Tosta is perfectly positioned to ride this exciting
+                <p data-aos="fade-up" data-aos-duration="1000">The cafe and QSR scene is absolutely buzzing, and Tosta
+                    is perfectly positioned to ride this exciting
                     wave! Here's why the market is ripe for your success</p>
                 <div class="points">
                     <div class="point-details" data-aos="fade-up" data-aos-duration="1000">
@@ -548,8 +552,10 @@
             <div class="content-container">
                 <div class="card">
                     <div class="card-details key-offerings">
-                        <h1 class="mb-120" data-aos="fade-up" data-aos-duration="1000">From Spark to Soaring Success!</h1>
-                        <p data-aos="fade-up" data-aos-duration="1000">At Tosta, we believe every bite and every sip should spark joy and good
+                        <h1 class="mb-120" data-aos="fade-up" data-aos-duration="1000">From Spark to Soaring Success!
+                        </h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">At Tosta, we believe every bite and every sip
+                            should spark joy and good
                             conversation. That's why we've poured our passion into crafting offerings that
                             truly bring people together...</p>
                         <div class="points">
@@ -586,8 +592,10 @@
             <div class="content-container">
                 <div class="card">
                     <div class="card-details key-offerings">
-                        <h1 data-aos="fade-up" data-aos-duration="1000">Our Journey So Far...</br>Raising a Toast to Growth!</h1>
-                        <h2 data-aos="fade-up" data-aos-duration="1000">Here's a glimpse of the exciting milestones we've celebrated together</h2>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">Our Journey So Far...</br>Raising a Toast to
+                            Growth!</h1>
+                        <h2 data-aos="fade-up" data-aos-duration="1000">Here's a glimpse of the exciting milestones
+                            we've celebrated together</h2>
                         <div class="points">
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <h3>Tosta's Name, Protected Globally</h3>
@@ -886,5 +894,32 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Scroll to next section on any screen click
+            document.body.addEventListener("click", function () {
+                const sections = document.querySelectorAll("section");
+                const scrollY = window.scrollY;
+                let nextSection = null;
+
+                for (let i = 0; i < sections.length; i++) {
+                    const sectionTop = sections[i].offsetTop;
+
+                    if (sectionTop > scrollY + 10) {
+                        nextSection = sections[i];
+                        break;
+                    }
+                }
+
+                if (nextSection) {
+                    nextSection.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>
