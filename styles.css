@@ -815,7 +815,7 @@ p {
    line-height: 1.5;
    margin: 0;
    text-align: left;
-   min-height: 192px;
+   min-height: 151px;
    display: flex;
    align-items: center;
 }
@@ -1009,6 +1009,12 @@ p {
 
 .fa-square-whatsapp {
    font-size: 18px;
+}
+
+@media only screen and (max-width: 1440px) {
+   .team-section .member-description p {
+      min-width: 191px;
+   }
 }
 
 @media only screen and (max-width: 1280px) {
