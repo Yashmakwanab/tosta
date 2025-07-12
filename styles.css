@@ -572,6 +572,15 @@ p {
    justify-content: flex-start;
 }
 
+.financial-highlights .details .swipe-right {
+   margin: 20px 0;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   color: #372e2c;
+   display: none;
+}
+
 .financial-highlights .details .table-header {
    font-size: 16px;
    font-weight: 500;
@@ -1021,7 +1030,7 @@ p {
    .container {
       padding: 0 50px;
    }
-   
+
    .banner .header .logo {
       gap: 50px;
    }
@@ -1086,7 +1095,8 @@ p {
       background-position: top center;
    }
 
-   .investment-breakdown h1, .financial-highlights h1 {
+   .investment-breakdown h1,
+   .financial-highlights h1 {
       justify-content: center;
    }
 }
@@ -1424,7 +1434,8 @@ p {
       padding: 0 20px;
    }
 
-   .background-banner, .background-banner-top {
+   .background-banner,
+   .background-banner-top {
       display: none;
    }
 
@@ -1434,5 +1445,9 @@ p {
 
    .listing .info-row {
       margin-left: 0;
+   }
+
+   .financial-highlights .details .swipe-right {
+      display: block;
    }
 }
